@@ -1,0 +1,23 @@
+{
+  "name": "cypressdp",
+  "version": "1.0.0",
+  "description": "",
+  "main": "test.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MaGeeg/CypressDP.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MaGeeg/CypressDP/issues"
+  },
+  "homepage": "https://github.com/MaGeeg/CypressDP#readme",
+  "devDependencies": {
+    "cypress": "^12.2.0",
+    "@faker-js/faker": "^7.6.0"
+  }
+}
