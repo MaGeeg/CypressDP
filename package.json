@@ -19,5 +19,8 @@
   "devDependencies": {
     "cypress": "^12.2.0",
     "@faker-js/faker": "^7.6.0"
+  },
+  "dependencies": {
+    "cypress-localstorage-commands": "^2.2.2"
   }
 }
