@@ -1,0 +1,30 @@
+import ShopPage from '../page-objects/shopPage';
+// import {faker} from '@faker-js/faker';
+import CartPage from '../page-objects/cartPage';
+import OrderPage from '../page-objects/orderPage';
+
+
+describe('my first scenario', () => {
+    const shopPage = new ShopPage();
+    const cartPage = new CartPage();
+    const orderPage = new OrderPage();
+
+    before(function () {
+        //w katalogu fixture jest plik users | as = zapisujemy nasz alias
+        cy.fixture('products').as('productData')
+
+
+    })
+    
+    it('should order product from the shop', function(){
+        shopPage.visitPage()
+        shopPage.addProductToCart(this.productData.HoodieWithZipper)
+        shopPage.clickGoToCartFromProductButton()
+        cartPage.checkThatAddedProductIsInCart(this.productData.HoodieWithZipper)
+        cartPage.clickGoToPaymentsButton()
+        orderPage.fillAllRequiredFields()
+        orderPage.clickOrderFinishButton()
+        orderPage.checkOrderFinished()
+    })
+
+})

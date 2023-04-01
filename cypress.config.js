@@ -7,8 +7,8 @@ module.exports = defineConfig({
     viewportWidth:1200,
 
   e2e: {
-    baseUrl: 'https://simpletestsite.fabrykatestow.pl/'
-
+    // baseUrl: 'https://simpletestsite.fabrykatestow.pl/'
+    baseUrl: 'https://tapsshop.pl'
 
 
     // setupNodeEvents(on, config) {
