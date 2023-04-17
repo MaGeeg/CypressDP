@@ -1,6 +1,7 @@
 const { defineConfig } = require("cypress");
 
 module.exports = defineConfig({
+  projectId: 'ab696f',
 
     //ustawienie okna przeglądarki
     viewportHeight:800, 

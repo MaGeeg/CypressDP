@@ -3,6 +3,7 @@ import ShopPage from '../page-objects/shopPage';
 import CartPage from '../page-objects/cartPage';
 import OrderPage from '../page-objects/orderPage';
 
+//kod tego testu jest taki sam jak test TS2 - z kursu Paweł
 
 describe('my first scenario', () => {
     const shopPage = new ShopPage();
@@ -18,9 +19,9 @@ describe('my first scenario', () => {
     
     it('should order product from the shop', function(){
         shopPage.visitPage()
-        shopPage.addProductToCart(this.productData.HoodieWithZipper)
+        shopPage.addProductToCart(this.productData.LongSleeveTee)
         shopPage.clickGoToCartFromProductButton()
-        cartPage.checkThatAddedProductIsInCart(this.productData.HoodieWithZipper)
+        cartPage.checkThatAddedProductIsInCart(this.productData.LongSleeveTee)
         cartPage.clickGoToPaymentsButton()
         orderPage.fillAllRequiredFields()
         orderPage.clickOrderFinishButton()

@@ -2,6 +2,8 @@ import ShopPage from '../page-objects/shopPage'
 import {faker} from '@faker-js/faker';
 import CartPage from '../page-objects/cartPage';
 
+//kod tego testu jest taki sam jak test TS1 - z kursu Paweł
+
 
 describe('my first scenario', () => {
     const shopPage = new ShopPage();
@@ -26,7 +28,4 @@ describe('my first scenario', () => {
         cartPage.removeItemFromCart()
         cartPage.checkThatCartIsEmpty()
     })
-
-
-
 })

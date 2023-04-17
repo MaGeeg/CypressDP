@@ -12,5 +12,37 @@
     "Sunglasses": {
         "Locator":"a[data-product_id='49']",
         "Name":"Sunglasses"
-    }    
+    },
+
+    "LongSleeveTee": {
+        "Locator":"a[data-product_id='52']",
+        "Name":"Long Sleeve Tee"
+    },
+
+    "Cap": {
+        "Locator":"a[data-product_id='48']",
+        "Name":"Cap"
+    },
+
+    "Belt": {
+        "Locator":"a[data-product_id='47']",
+        "Name":"Belt"
+    },
+
+    "Beanie": {
+        "Locator":"a[data-product_id='46']",
+        "Name":"Beanie"
+    },
+
+    "T-Shirt": {
+        "Locator":"a[data-product_id='45']",
+        "Name":"T-Shirt"
+    },
+    "HoodieWithLogo": {
+        "Locator":"a[data-product_id='44']",
+        "Name":"Hoodie with Logo"
+    }
+
+
+
 }
